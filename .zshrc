@@ -87,5 +87,5 @@ tmux attach || tmux
 
 export NVM_DIR="/home/cam/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm use 5.8.0
+#nvm use 5.8.0
 clear
