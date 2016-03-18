@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tnew="tmux new-window"
 tmux attach || tmux
-
+tmux rename-window server
 export NVM_DIR="/home/cam/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 #nvm use 5.8.0
