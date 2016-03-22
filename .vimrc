@@ -18,15 +18,19 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'trevorrjohn/vim-obsidian'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'vim-airline/vim-airline-themes'
 
-:syntax on
 set mouse=a
-colorscheme monokai
+syntax enable
+set background=dark
+colorscheme slate
+:set tabstop=2
+let g:airline_theme='powerlineish'
 " NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd VimEnter * NERDTree
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -36,3 +40,5 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+call vundle#end()
