@@ -11,7 +11,12 @@ At the this point you might see errors but no need to worry. From this point run
 4. ```:source %```
 5. ```:PluginInstall```
 
-This should now go install the plugins for your vim
+This should now go install the plugins for your vim.
+
+Once complete quit your vim by running
+
+```:q```
+
 
 ##Cool Commands
 
