@@ -1,6 +1,6 @@
 #How to install .vim_files
 
-Run the following commands step by step
+Run the following commands step by step in your terminal
 
 1. ```git clone git@github.com:cameronnorman/.vim_files.git ~/.vim```
 2. ```cp ~/.vimrc ~/```
