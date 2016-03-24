@@ -13,10 +13,7 @@ At the this point you might see errors but no need to worry. From this point run
 
 This should now go install the plugins for your vim.
 
-Once complete quit your vim by running
-
-```:q```
-
+Once complete quit your vim and reopen it.
 
 ##Cool Commands
 
