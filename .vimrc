@@ -26,7 +26,7 @@ Plugin 'vim-airline/vim-airline-themes'
 set mouse=a
 syntax enable
 set background=dark
-colorscheme slate
+colorscheme monokai
 :set tabstop=2
 let g:airline_theme='powerlineish'
 " NERDTree
