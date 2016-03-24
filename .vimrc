@@ -22,6 +22,11 @@ Plugin 'trevorrjohn/vim-obsidian'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'pangloss/vim-javascript'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'ap/vim-css-color'
 
 set mouse=a
 syntax enable
