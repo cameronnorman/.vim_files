@@ -29,9 +29,11 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'ap/vim-css-color'
 
 set mouse=a
+set relativenumber
 syntax enable
-set background=dark
-colorscheme monokai
+set background=light
+colorscheme slate
+let g:solarized_termcolors=256
 :set tabstop=2
 let g:airline_theme='powerlineish'
 " NERDTree
