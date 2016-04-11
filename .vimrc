@@ -34,6 +34,12 @@ syntax enable
 set background=light
 colorscheme slate
 let g:solarized_termcolors=256
+set ai
+set relativenumber
+syntax enable
+set background=light
+colorscheme brogrammer
+>>>>>>> 6595c416a87a32570df15b13cdacae16ee6ef337
 :set tabstop=2
 let g:airline_theme='powerlineish'
 " NERDTree
