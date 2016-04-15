@@ -39,11 +39,11 @@ set relativenumber
 syntax enable
 set background=light
 colorscheme brogrammer
->>>>>>> 6595c416a87a32570df15b13cdacae16ee6ef337
 :set tabstop=2
 let g:airline_theme='powerlineish'
 " NERDTree
 autocmd VimEnter * NERDTree
+set splitright
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -54,4 +54,28 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+autocmd BufNewFile,BufReadPost *.hbs set filetype=html
+set clipboard+=unnamedplus
+
+function! NERDTreeQuit()
+  redir => buffersoutput
+		silent buffers
+	redir END
+	"                     1BufNo  2Mods.     3File           4LineNo
+	let pattern = '^\s*\(\d\+\)\(.....\) "\(.*\)"\s\+line \(\d\+\)$'
+	let windowfound = 0
+
+	for bline in split(buffersoutput, "\n")
+		let m = matchlist(bline, pattern)
+		if (len(m) > 0)
+			if (m[2] =~ '..a..')
+				let windowfound = 1
+			endif
+		endif
+	endfor
+	if (!windowfound)
+		quitall
+	endif
+endfunction
+autocmd WinEnter * call NERDTreeQuit()
 call vundle#end()
